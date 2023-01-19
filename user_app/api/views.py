@@ -25,7 +25,7 @@ def registration_view(request):
             refresh = RefreshToken.for_user(account)
             data['token'] = {
                 'refresh': str(refresh),
-                'access': str(refresh.access_token),
+                'access': str(refresh.access_token), 
             }
 
         else:
